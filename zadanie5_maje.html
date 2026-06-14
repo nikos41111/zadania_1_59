@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Zadanie 5 - Majer</title>
+<script language="JavaScript">
+
+function WinOpen_majer1() {
+   window.open("grafika1.html","graf1","width=250,height=350,top=500,left=50");
+}
+function WinOpen_majer2() {
+   window.open("grafika2.html","graf2","width=250,height=350,top=400,left=350");
+}
+function WinOpen_majer3() {
+   window.open("grafika3.html","graf3","width=300,height=350,top=300,left=650");
+}
+function WinOpen_majer4() {
+   window.open("grafika4.html","graf4","width=300,height=350,top=200,left=950");
+}
+function okno_zamknij_majer() {
+   window.close();
+}
+</script>
+</head>
+<body>
+<center>
+   <h2 style="color:red;">
+      wykonal: Majer mój numer w dzienniku 11, czyli mam układ (11 mod 4=3) układ 3
+   </h2>
+   <input type="button" value="grafika1" onclick="WinOpen_majer1()">
+   <input type="button" value="grafika2" onclick="WinOpen_majer2()">
+   <input type="button" value="grafika3" onclick="WinOpen_majer3()">
+   <input type="button" value="grafika4" onclick="WinOpen_majer4()">
+   <br><br>
+   <input type="button" value="zamknij okno" onclick="okno_zamknij_majer()">
+</center>
+</body>
+</html>

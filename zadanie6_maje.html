@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Majer - Zadanie 6</title>
+</head>
+<body>
+
+    <h1>Zadanie 6 – Teoria JavaScript</h1>
+
+    <button onclick="alert('Zaliczenie zadania 6 – Majer')">Majer - Zadanie 6</button>
+
+    <p><b>1) Rodzaje okienek</b><br>
+    W JavaScript wyróżniamy następujące rodzaje okienek dialogowych:<br>
+    <u>Okienko alert</u> – wyświetla okienko dialogowe z informacją i przyciskiem <b>OK</b>.<br>
+    <u>Okienko prompt</u> – generuje okno, w którym użytkownik może wpisać wartość, zwracaną następnie do programu.<br>
+    <u>Okienko confirm</u> – służy do tego, aby użytkownik coś potwierdził (stąd nazwa confirm).
+    </p>
+
+    <p><b>2) Konwersji liczb</b><br>
+    Wczytanie zmiennej z użyciem <u>prompt</u> wykonywane jest jako ciąg znaków.<br>
+    Dlatego konieczna jest <b>konwersja</b> z ciągu znaków na wartości liczbowe, aby wykonywać obliczenia:<br>
+    <b>parseFloat(zmienna)</b> – konwersja zmiennej do typu float<br>
+    <b>parseInt(zmienna)</b> – konwersja zmiennej do typu int (liczbowego)<br>
+    <b>toString(zmienna)</b> – konwersja zmiennej do typu łańcuchowego
+    </p>
+
+    <p><b>3) Przy nadawaniu nazw zmiennym należy przestrzegać pewnych zasad:</b><br>
+    1. Nazwa zmiennej musi się zaczynać od litery, znaku <u>$</u> lub <u>_</u>, może zawierać tylko litery (bez polskich znaków), cyfry oraz <u>$</u> i <u>_</u>.<br>
+    Poprawne nazwy zmiennych: zmienna1, $wynik, _rozmiar, wynik1, Rekord, $_gracz.<br>
+    Błędne nazwy zmiennych: 1zmienna, wynik gry, wysokosc&szerokosc, wynik.rekord, &gracz, wysokość, imie+nazwisko.<br><br>
+    2. Wielkość liter ma znaczenie.<br>
+    Rekord i rekord to dwie różne zmienne!<br><br>
+    3. Należy nie używać słów kluczowych JavaScript jako nazw zmiennych.
+    </p>
+
+    <p><b>4) Typy zmiennych w JavaScript</b><br>
+    W JavaScript nie ma możliwości definiowania różnych typów zmiennych tak jak w C++.<br>
+    Typy zmiennych są definiowane w trakcie ich przypisywania.<br><br>
+    Podstawowe typy zmiennych:<br>
+    <u>Number</u> – typ liczbowy (zmienne całkowite i zmiennoprzecinkowe)<br>
+    <u>String</u> – typ tekstowy<br>
+    <u>Boolean</u> – typ logiczny<br>
+    <u>Null</u> – pusta zawartość<br>
+    <u>Undefined</u> – typ niezidentyfikowany<br>
+    <u>Object</u> – obiekt
+    </p>
+
+</body>
+</html>

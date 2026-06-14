@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Obiekt Router</title>
+    <script type="text/javascript">
+        var router = {
+            rodzaj: 'domowy',        
+            producent: 'TP-Link',    
+            predkosc: '300 Mb/s',    
+            Router_wyswietl_nazwisko: function () {
+               
+                document.write(
+                    'Router: ' + this.rodzaj + ', ' +
+                    this.producent + ', ' +
+                    this.predkosc + '<br>'
+                );
+                
+                document.write('Nazwisko: Majer');
+            }
+        };
+
+        router.Router_wyswietl_nazwisko();
+    </script>
+</head>
+<body>
+<br>
+Programowanie obiektowe. <br>
+Obiekt to router<br>
+Pola:<br>
+rodzaj<br>
+producent<br>
+predkosc<br>
+Metoda: Router_wyswietl_nazwisko<br>
+</body>
+</html>

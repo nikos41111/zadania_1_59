@@ -1,0 +1,15 @@
+<div style="color:green;font-size:55px;"> menu </div>
+<div style="color:red;font-size:40px;"> 1 - czerwony </div>
+<div style="color:blue;font-size:40px;"> 2 - niebieski </div>
+
+<input type="button" name="majer" value="Oblicz" onclick="fun_maj()" />
+ <script>
+ function fun_maj() {
+ var x_maj = prompt("Podaj kolor", "");
+ if(x_maj == 1 || x_maj.toLowerCase() == "czerwony") {
+document.write('<h1 style="color:red;">wczytałeś kolor czerwony</h1><br />'); }
+ else if(x_maj == 2 || x_maj.toLowerCase() == "niebieski") {
+document.write('<h1 style="color:blue;">wczytałeś kolor niebieski</h1><br />');
+}
+}
+</script>

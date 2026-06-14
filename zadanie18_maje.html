@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<title>Użycie funkcji</title>
+<meta charset="utf-8">
+</head>
+<body>
+<div style="color:navy;font-size:30px;">
+<script>
+var a = parseFloat(prompt("a = ", ""));
+var b = parseFloat(prompt("b = ", ""));
+
+function suma_maje(a, b) {
+    return a + b;
+}
+
+function odejmowanie_maje(a, b) {
+    return a - b;
+}
+
+function mnozenie_maje(a, b) {
+    return a * b;
+}
+
+function kwadrat_maje(x) {
+    return x * x;
+}
+
+function dzielenie_maje(a, b) {
+    return a % b;   
+}
+
+document.write("suma = " + suma_maje(a, b) + "<br>");
+document.write("odejmowanie = " + odejmowanie_maje(a, b) + "<br>");
+document.write("mnożenie = " + mnozenie_maje(a, b) + "<br>");
+document.write(a + "^2 = " + kwadrat_maje(a) + "<br>");
+document.write(b + "^2 = " + kwadrat_maje(b) + "<br>");
+document.write("dzielenie = " + dzielenie_maje(a, b) + "<br>");
+</script>
+</div>
+</body>
+</html>

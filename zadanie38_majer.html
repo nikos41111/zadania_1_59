@@ -1,0 +1,69 @@
+<html>
+<body style="background-color:silver">
+<div style="color:green;font-size:41px;">
+ <script language="JavaScript">
+document.write("Moje nazwisko to: Nikodem Majer" + "<br>");
+document.write("Liczba1= 6" + "<br>");
+document.write("Liczba2= 6 + 7 = 13" + "<br>");
+document.write("Liczba3= 7" + "<br>");
+document.write("Liczba4= 7 + 4 = 11" + "<br>");
+</script>
+</div>
+<div style="color:red;font-size:41px;">
+<script>
+document.write("-----Menu-----" + "<br>");
+document.write("6-wyświetlanie teorii o operatorach" + "<br>");
+document.write("27-czy liczba należy do przedziału (6; 13]" + "<br>");
+document.write("58-czy liczba należy do przedziału (-oo ; 7) lub [11 ; +oo)" + "<br>");
+</script>
+<br>
+<input type="button" name="majer" value="podaj opcje" onclick="opcja_maj()" />
+</div>
+
+<script>
+function opcja_maj() {
+ var x_maj = prompt("Podaj opcje", "");
+if(x_maj==6)
+{
+document.write("<font color=blue size=7>Jesteś w opcja 6 --> teoria</font>"+"<br>");
+document.write("<font color=green size=7>&& i x=3 y=4 (x<9 && y >2) wynik --> prawda</font>"+"<br>");
+document.write("<font color=green size=7>|| lub x=3 y=4 (x==8 || y==6) wynik --> fałsz</font>"+"<br>");
+document.write("<font color=green size=7>! zaprzeczenie x=3 y=4 !(x==y) wynik --> prawda</font>"+"<br>");
+}
+
+if(x_maj==27)
+{
+document.write("<font color=blue size=7>Jesteś w opcja 27 --> przedział</font>"+"<br>");
+var liczba_maj=parseFloat(prompt("podaj liczbę ",""));
+if(liczba_maj>=6 && liczba_maj<13)
+{
+document.write("<font color=green size=7>Liczba należy do przedziału</font>"+"<br>");
+}
+else
+{
+document.write("<font color=green size=7>Liczba nie należy do przedziału</font>"+"<br>");
+}
+}
+
+if(x_maj==58)
+{
+document.write("<font color=blue size=7>Jesteś w opcja 58 --> przedział</font>"+"<br>");
+var liczbaa_maj=parseFloat(prompt("podaj liczbę ",""));
+if(liczbaa_maj<7 || liczbaa_maj>=11)
+{
+document.write("<font color=green size=7>Liczba należy do przedziału</font>"+"<br>");
+}
+else
+{
+document.write("<font color=green size=7>Liczba nie należy do przedziału</font>"+"<br>");
+}
+}
+
+if((x_maj!=6)&&(x_maj!=27)&&(x_maj!=58))
+{
+ document.write("<font color=red size=7> nie ma takiej opcji</font>"+"<br>");
+}
+}
+</script>
+</body>
+</html>

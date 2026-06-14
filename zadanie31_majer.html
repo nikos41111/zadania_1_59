@@ -1,0 +1,37 @@
+<html>
+<head>
+<script type="text/javascript">
+
+function Router(rodzaj_k, producent_k, predkosc_k)
+{
+    this.rodzaj = rodzaj_k;
+    this.producent = producent_k;
+    this.predkosc = predkosc_k;
+}
+
+Router.prototype.wypisz = function ()
+{
+    alert(this.rodzaj + " " + this.producent + " " + this.predkosc);
+};
+
+var router1 = new Router("Domowy", "TP-Link", "300 Mb/s");
+var router2 = new Router("Biuro", "Netgear", "1200 Mb/s");
+var router3 = new Router("Gamingowy", "ASUS", "2400 Mb/s");
+
+router1.wypisz();
+router2.wypisz();
+router3.wypisz();
+
+document.write("router 1: " + router1.rodzaj + " " + router1.producent + " " + router1.predkosc + "<br>");
+document.write("router 2: " + router2.rodzaj + " " + router2.producent + " " + router2.predkosc + "<br>");
+document.write("router 3: " + router3.rodzaj + " " + router3.producent + " " + router3.predkosc + "<br>");
+document.write("Nazwisko: Majer");
+
+</script>
+</head>
+
+<body>
+<br>
+Programowanie obiektowe
+</body>
+</html>

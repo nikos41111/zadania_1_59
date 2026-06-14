@@ -1,0 +1,78 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24"><!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="styl.css">
+</head>
+<body>
+<script type="text/javascript">
+
+function AB_maje()
+{
+    var xa_maje = parseFloat(document.getElementById('xa_maje').value);
+    var xb_maje = parseFloat(document.getElementById('xb_maje').value);
+    var ya_maje = parseFloat(document.getElementById('ya_maje').value);
+    var yb_maje = parseFloat(document.getElementById('yb_maje').value);
+
+    var x = xa_maje - xb_maje;
+    var y = ya_maje - yb_maje;
+    var x_kwadrat = Math.pow(x,2);
+    var y_kwadrat = Math.pow(y,2);
+    var suma_kw = x_kwadrat + y_kwadrat;
+    var pierwiastek = Math.sqrt(suma_kw);
+    document.getElementById("nazwa").innerHTML = "pole AB= " + pierwiastek + " cm";
+}
+ 
+function AC_maje()
+{
+    var xa_maje = parseFloat(document.getElementById('xa_maje').value);
+    var xc_maje = parseFloat(document.getElementById('xc_maje').value);
+    var ya_maje = parseFloat(document.getElementById('ya_maje').value);
+    var yc_maje = parseFloat(document.getElementById('yc_maje').value);
+
+    var x = xa_maje - xc_maje;
+    var y = ya_maje - yc_maje;
+    var x_kwadrat = Math.pow(x,2);
+    var y_kwadrat = Math.pow(y,2);
+    var suma_kw = x_kwadrat + y_kwadrat;
+    var pierwiastek = Math.sqrt(suma_kw);
+    document.getElementById("nazwa").innerHTML = "pole AC= " + pierwiastek + " cm";
+}
+
+function BC_maje()
+{
+    var xb_maje = parseFloat(document.getElementById('xb_maje').value);
+    var xc_maje = parseFloat(document.getElementById('xc_maje').value);
+    var yb_maje = parseFloat(document.getElementById('yb_maje').value);
+    var yc_maje = parseFloat(document.getElementById('yc_maje').value);
+
+    var x = xb_maje - xc_maje;
+    var y = yb_maje - yc_maje;
+    var x_kwadrat = Math.pow(x,2);
+    var y_kwadrat = Math.pow(y,2);
+    var suma_kw = x_kwadrat + y_kwadrat;
+    var pierwiastek = Math.sqrt(suma_kw);
+    document.getElementById("nazwa").innerHTML = "pole BC= " + pierwiastek + " cm";
+}
+
+</script>
+ 
+Podaj długość boku xa: <input type="text" id="xa_maje"> cm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Podaj długość boku ya: <input type="text" id="ya_maje"> cm<br><br>
+Podaj długość boku xb: <input type="text" id="xb_maje"> cm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Podaj długość boku yb: <input type="text" id="yb_maje"> cm<br><br>
+Podaj długość boku xc: <input type="text" id="xc_maje"> cm &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+Podaj długość boku yc: <input type="text" id="yc_maje"> cm<br><br>
+
+<input type="button" name="AB" value="Długość AB" onclick="AB_maje()"><br><br>
+<input type="button" name="AC" value="Długość AC" onclick="AC_maje()"><br><br>
+<input type="button" name="BC" value="Długość BC" onclick="BC_maje()"><br><br>
+
+<div style="color:red;font-size:50px;" id="nazwa"></div>
+</body>
+</html>
+</textarea>
+ </body>
+</html>

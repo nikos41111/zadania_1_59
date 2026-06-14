@@ -1,0 +1,42 @@
+<html>
+<head>
+<title>Przykład obliczenia V i Pc walca</title>
+<script language="JavaScript">
+function V_maje(r, h) {
+    var r_liczba = parseFloat(r);
+    var h_liczba = parseFloat(h);
+    var V_wynik = Math.PI * r_liczba * r_liczba * h_liczba;
+    document.getElementsByName('obj')[0].value = V_wynik.toFixed(2);
+    alert("V = " + V_wynik.toFixed(2) + " cm^3");
+    document.getElementById("pokaz1").innerHTML = "V = " + V_wynik.toFixed(2) + " cm^3<br>";
+}
+
+function Pc_maje(r, h) {
+    var r_liczba = parseFloat(r);
+    var h_liczba = parseFloat(h);
+    var Pc_wynik = 2 * Math.PI * r_liczba * r_liczba + 2 * Math.PI * r_liczba * h_liczba;
+    document.getElementsByName('pole')[0].value = Pc_wynik.toFixed(2);
+    alert("Pc = " + Pc_wynik.toFixed(2) + " cm^2");
+    document.getElementById("pokaz2").innerHTML = "Pc = " + Pc_wynik.toFixed(2) + " cm^2";
+}
+</script>
+</head>
+<body>
+<h2>Pobliczanie V i Pc walca</h2>
+
+<form name="formularz" action="..." onsubmit="V_maje(this.promien.value, this.wysokosc.value); Pc_maje(this.promien.value, this.wysokosc.value); return false;">
+    Podaj r = <input size="6" name="promien">
+    Podaj h = <input size="6" name="wysokosc">
+    <br><br>
+    <input type="submit" value="Oblicz">
+    <br><br>
+    V = <input size="6" name="obj">
+    Pc = <input size="6" name="pole">
+</form>
+
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>

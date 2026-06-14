@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<head>
+  <title>Sprawdzenie danych Majer</title>
+  <meta charset="utf-8">
+</head>
+<body>
+<div style="color:red;font-size:50px;">
+  <script language="JavaScript">
+    do {
+      var liczba1 = prompt("wysokość=", "");
+      var h_m = parseFloat(liczba1);
+    }
+    while (h_m <= 0);
+
+    do {
+      var liczba1 = prompt("podstawa=", "");
+      var a_m = parseFloat(liczba1);
+    }
+    while (!(a_m > 0));
+
+    var Pole = a_m * h_m / 2;
+    document.write("Pole=" + Pole.toFixed(2) + " cm^2" + "<br>");
+  </script>
+</div>
+</body>
+</html>

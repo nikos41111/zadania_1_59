@@ -1,0 +1,50 @@
+<html>
+ <body>
+ <textarea cols="90" rows="24"><!DOCTYPE html>
+<html>
+<head>
+<script language="JavaScript">
+function pole_maje(a, b)
+{
+    var a_maje = parseFloat(a);
+    var b_maje = parseFloat(b);
+    var pole_maje_wynik = a_maje * b_maje;
+    document.getElementsByName('pole_wynik')[0].value = pole_maje_wynik.toFixed(2); 
+    alert("pole = " + pole_maje_wynik.toFixed(2) + " cm");
+    document.getElementById("pokaz1").innerHTML = "pole = " + pole_maje_wynik.toFixed(2) + " cm";
+}
+
+function obwod_maje(a, b)
+{
+    var a_maje = parseFloat(a);
+    var b_maje = parseFloat(b);
+    var obwod_maje_wynik = 2 * a_maje + 2 * b_maje;
+    document.getElementsByName('obwod_wynik')[0].value = obwod_maje_wynik.toFixed(2);
+    alert("obwod = " + obwod_maje_wynik.toFixed(2) + " cm");
+    document.getElementById("pokaz2").innerHTML = "obwod = " + obwod_maje_wynik.toFixed(2) + " cm";
+}
+</script>
+</head>
+<body>
+Obliczanie pola i obwodu prostokąta
+<br><br>
+<form name="formularz" action="..." onsubmit="pole_maje(this.boka.value, this.bokb.value); obwod_maje(this.boka.value, this.bokb.value); return false;">
+Podaj a =
+<input size="6" name="boka">
+Podaj b =
+<input size="6" name="bokb">
+<br><br>
+<input type="submit" value="oblicz">
+<br><br>
+pole = <input size="6" name="pole_wynik">
+obwod = <input size="6" name="obwod_wynik">
+</form>
+<table>
+<tr id="pokaz1"></tr>
+<tr id="pokaz2"></tr>
+</table>
+</body>
+</html>
+</textarea>
+ </body>
+</html>

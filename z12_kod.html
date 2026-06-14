@@ -1,0 +1,30 @@
+<html>
+<body>
+<textarea cols="90" rows="24">
+<html>
+<body>
+<div style="color:green;font-size:38px;">
+<script language="JavaScript">
+var D1_majer = prompt("Data1=", "");
+var G1_majer = prompt("Godzina1=", "");
+var D2_majer = prompt("Data2=", "");
+var G2_majer = prompt("Godzina2=", "");
+var sekund;
+var a = parseFloat(D1_majer);
+var b = parseFloat(D2_majer);
+var g1 = parseFloat(G1_majer);
+var g2 = parseFloat(G2_majer);
+sekund = ((a * 24 + g1) - (b * 24 + g2)) * 3600;
+document.write("Ilość sekund między dniami " + a + " i " + b + " = " + sekund + "<br>");
+function okno_zamknij_majer()
+{
+    window.close()
+}
+</script>
+</div>
+<input type="button" value="zamknij okno" onclick="okno_zamknij_majer()"/>
+</body>
+</html>
+</textarea>
+</body>
+</html>
